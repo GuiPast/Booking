@@ -11,11 +11,20 @@ public class BookingService {
 	public static void createBooking() {
 
 		// TODO logica de reservar un viaje
+		BookingService.bookTrip();
+	}
+
+	public static void findBookings() {
+
+		// TODO logica de listar las reservas
+	}
+	public static void bookTrip() {
 		System.out.println("Destination: ");
 		for (String city : cities) {
 			System.out.print(city.concat(" "));
 		}
 		String destinationTrip = sc.nextLine();
+
 		if (Arrays.asList(cities).contains(destinationTrip)) {
 
 			System.out.println("Origin: ");
@@ -31,8 +40,8 @@ public class BookingService {
 				}
 				String transportType = sc.nextLine();
 				if (Arrays.asList(transportation).contains(transportType)) {
-					
-				}else {
+
+				} else {
 					System.out.println("Error");
 				}
 			} else {
@@ -42,10 +51,4 @@ public class BookingService {
 			System.out.println("Error.");
 		}
 	}
-
-	public static void findBookings() {
-
-		// TODO logica de listar las reservas
-	}
-
 }
