@@ -1,6 +1,7 @@
 package com.es.eoi.entity;
 
 import java.util.Date;
+import java.util.Scanner;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -16,5 +17,11 @@ public class Client {
 	private String surname;
 	
 	private Date birthDate;	
+	
 
+	public Client() {
+		// TODO Auto-generated constructor stub
+	}
+
+	
 }

@@ -3,15 +3,22 @@ package com.es.eoi.service;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class BookingService {
-	static String[] cities = { "Alicante", "Madrid", "Valencia" };
-	static String[] transportation = { "Train", "Bus", "Airplane" };
-	static Scanner sc = new Scanner(System.in);
+import java.text.ParseException;
 
-	public static void createBooking() {
+public class BookingService {
+	
+	
+	public static void createBooking() throws ParseException {
 
 		// TODO logica de reservar un viaje
 		BookingService.bookTrip();
+		
+		
+		ClientService.newClient();
+		
+		
+		
+		
 	}
 
 	public static void findBookings() {

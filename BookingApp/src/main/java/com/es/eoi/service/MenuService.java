@@ -1,12 +1,13 @@
 package com.es.eoi.service;
 
+import java.text.ParseException;
 import java.util.Scanner;
 
 @SuppressWarnings("resource")
 public class MenuService {
 
 	
-	public static void printMainMenu() {
+	public static void printMainMenu() throws ParseException {
 
 		System.out.println("Bienvenido al Booking flipante, seleccione una opcion: ");
 		System.out.println("1-Reservar viaje ");

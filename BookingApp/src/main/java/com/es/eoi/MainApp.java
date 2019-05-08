@@ -1,5 +1,6 @@
 package com.es.eoi;
 
+import java.text.ParseException;
 import java.util.List;
 
 import com.es.eoi.entity.Booking;
@@ -13,7 +14,7 @@ public class MainApp {
 	public static List<Client> client;
 	public static List<Trip> trip;
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws ParseException {
 
 			MenuService.printMainMenu();
 
