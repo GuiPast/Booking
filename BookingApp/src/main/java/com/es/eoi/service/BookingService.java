@@ -7,6 +7,9 @@ import java.text.ParseException;
 
 public class BookingService {
 	
+	static String[] cities = { "Alicante", "Madrid", "Valencia" };
+	static String[] transportation = { "Train", "Bus", "Airplane" };
+	static Scanner sc = new Scanner(System.in);
 	
 	public static void createBooking() throws ParseException {
 
